@@ -1,0 +1,23 @@
+@import "../settings/colors";
+@import "../settings/fonts";
+
+body {
+    font-family: $font-base;
+    color: $color-dark-gray;
+
+    // @media (max-width: 480px) {
+    //     width: 33.333%;
+    // }
+
+    // @media (max-width: 800px) {
+    //     width: 50%;
+    // }
+}
+
+#root {
+    display: flex;
+    justify-content: center;
+    margin: 0 8.875rem;
+    margin-top: 1.5rem;
+    flex-direction: column;
+}
