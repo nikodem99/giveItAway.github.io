@@ -1,0 +1,87 @@
+@import "../settings/colors.scss";
+
+.contact-form_container {
+    width: 33rem;
+    height: 20.4375rem;
+
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+
+        .contact-form_field {
+            display: flex;
+            flex-direction: column;
+            font-weight: bolder;
+            
+            .contact-form_field__input {
+                margin-top: 1rem;
+                border: none;
+                border-bottom: 0.125rem solid #B7B7B6;
+                outline: none;
+                background: transparent;
+                font-size: 1.0625rem;
+                line-height: 1.5rem;
+                
+                &::placeholder {
+                    opacity: 0.25;
+                }
+                &:focus::placeholder {
+                    color: transparent;
+                }
+            }
+        }
+
+        .small {
+            width: 16rem;
+        }
+
+        .large {
+            width: 33rem;
+            margin: 2.5rem 0;
+
+            .contact-form_field__input {
+                width: 100%;
+                height: 6.375rem;
+                resize: none;
+                overflow: none;
+            }
+        }
+
+        .contact-form_2_fields {
+        display: flex;
+        justify-content: space-between;
+        }
+
+        .contant-form_button_container{
+            align-self: flex-end;
+
+           .contact-form_button {
+            width: 9.375rem;
+            height: 3.125rem;
+            font-size: 1.125rem;
+            line-height: 2rem;
+            color: #000000;
+            font-weight: lighter;
+            border: 0.046875rem solid $color-dark-gray;
+            background: transparent;
+            cursor: pointer;
+            }  
+        }
+    }
+}
+
+//ERROR MESSAGES
+.error-message {
+    color: red;
+    font-weight: bolder;
+    font-size: 0.75rem;
+    line-height: 1.625rem;
+}
+
+#message.error-border, 
+#email.error-border, 
+#name.error-border {
+    border-bottom: 0.125rem solid rgba(255, 0, 0, 0.7);
+}

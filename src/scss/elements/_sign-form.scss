@@ -1,0 +1,85 @@
+@import "../settings/colors";
+
+.sign-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 123px;
+    margin-bottom: 202px;
+    position: relative;
+    
+    .sign-section_title__box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 60px;
+    }
+
+    .sign-section_form{
+        width: 503.79px;
+        height: 325px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .sign-section_inputs {
+            width: 384.5px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 31px;
+            background-color: $color-old-white;
+            margin-bottom: 40px;
+            padding: 40px 67px;
+        }
+
+        .sign-section_buttons {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            .sign-section_button {
+                width: 117px;
+                height: 50px;
+                border: 0.046875rem solid $color-pure-white;
+                background: $color-pure-white;
+                cursor: pointer;
+                font-size: 18px;
+                line-height: 32px;
+                font-weight: lighter;
+                text-decoration: none;
+
+                &:hover {
+                    border: 0.046875rem solid $color-dark-gray;  
+                }
+            }
+
+            a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: black;
+
+                a:visited, a:active, a:hover {
+                color: inherit; 
+                }
+            }
+        }
+    }
+}
+
+.general-error {
+    margin: 0 auto;
+    color: red;
+    font-weight: bolder;
+    font-size: 18px;
+    line-height: 1.625rem;
+    text-align: center;
+    position: absolute;
+    top: 150px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+}

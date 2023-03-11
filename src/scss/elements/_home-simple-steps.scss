@@ -1,0 +1,60 @@
+@import "../settings/colors";
+
+.simple-steps {
+    padding-top: 3.4375rem 8.85rem;
+    margin: 0 -8.85rem;
+
+    .simple-steps_title {
+        display: flex;
+        flex-direction: column;
+        margin-top: 3.4375rem;
+        margin-bottom: 2.125rem;
+    }
+
+    .simple-steps_columns {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 20.3125rem;
+    list-style: none;
+    background-color: $color-old-white;
+    padding: 2.875rem 8.85rem;
+
+        .simple-steps_one_column {
+            display: flex;
+            flex-direction: column;
+            height: 10.75rem;
+            max-width: 9.25rem;
+            text-align: center;
+            align-items: center;
+
+            .simple-steps_one_column_icon{
+                width: 5.1875rem;
+                height: 5.1875rem;
+                margin-bottom: 0.5rem;
+            }
+
+            .simple-steps_one_column_title {
+                font-size: 1.125rem;
+                line-height: 1.5rem;
+            }
+
+            .simple-steps_one_column_line {
+                width: 4.375rem;
+            }
+
+            .simple-steps_one_column_description {
+                height: 2.5rem;
+                margin: 0;
+            }
+        }
+    }
+
+    .simple-steps_button{
+        display: flex;
+        justify-content: center;
+        margin-top: 2.1875rem;
+        margin-bottom: 5rem;
+    }
+}
+

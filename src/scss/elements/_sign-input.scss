@@ -1,0 +1,33 @@
+@import "../settings/colors";
+
+.sign-input_box {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 62px;
+    font-weight: bolder;
+
+    .sign-input_field {
+        margin-top: 1rem;
+        border: none;
+        border-bottom: 0.125rem solid #B7B7B6;
+        outline: none;
+        background: transparent;
+        font-size: 1.0625rem;
+        line-height: 1.5rem;
+    }
+}
+
+//ERROR MESSAGES
+.error-message {
+    color: red;
+    font-weight: bolder;
+    font-size: 0.75rem;
+    line-height: 1.625rem;
+}
+
+#email.error-border, 
+#password.error-border,
+#password2.error-border {
+    border-bottom: 0.125rem solid rgba(255, 0, 0, 0.7);
+}

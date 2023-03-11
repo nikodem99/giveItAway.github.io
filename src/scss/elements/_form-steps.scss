@@ -1,0 +1,143 @@
+@import '../settings/colors';
+
+.form-step_label {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: lighter;
+    line-height: 32px;
+    color: black;
+    margin-bottom: 42px;
+    gap: 26px;
+}
+
+.form-step-one_input {
+    width: 40px;
+    height: 40px;
+    border: 0.046875rem solid $color-dark-gray;
+    appearance: none;
+    cursor: pointer;
+    margin-right: 4px;
+
+    &:checked {
+        background-color: $color-yellow;
+    }
+}
+
+.form-step_select {
+    width: 300px;
+    height: 49px;
+    padding: 8px;
+    font-weight: lighter;
+    line-height: 33px;
+    font-size: 24px;
+    appearance: none;  
+    background: transparent url('/assets/Icon-Arrow-Down.svg') no-repeat right;
+    border: 0.046875rem solid $color-dark-gray;
+    cursor: pointer;
+    
+      &:focus, &:active {
+        background: url('/assets/Icon-Arrow-Up.svg') no-repeat right;
+        outline: 0;
+    }
+}
+
+.form-step_h4 {
+    font-size: 24px;
+    line-height: 32px;
+    color: black;
+    font-weight: bolder;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.form-step_checkbox {
+    width: 634px;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 24px;
+    
+
+    .form-step_box {
+        height: 55px;
+        margin: 0;
+        white-space: nowrap;
+        padding: 11px 20px;
+        cursor: pointer;
+        position: relative;
+        align-items: center;
+        font-size: 24px;
+        font-weight: lighter;
+        line-height: 32px;
+        color: black;
+        z-index:1;
+     
+        input {
+            width: 100%;
+            height: 100%;
+            border: 0.046875rem solid $color-dark-gray;
+            appearance: none;
+            cursor: pointer;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+
+            &:checked {
+                background-color: $color-yellow;
+            }   
+
+            &:hover  {
+            background-color: $color-yellow;
+            }
+        }
+    }
+} 
+
+.form-step_text__input {
+    width: 570px;
+    height: 40px;
+    border: 0.046875rem solid $color-dark-gray;
+    background-color: transparent;
+    font-weight: lighter;
+    font-size: 24px;
+
+    &:focus {
+        outline: none;
+    }
+}
+.form-step_3_container {
+    display: flex;
+    flex-direction: column;
+}
+.miniError {
+    color: red;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 50px;
+}
+
+.form-step_pickup {
+    display: flex;
+    gap: 152px;
+    max-width: 100%;
+    margin:0;
+
+    .form-step_pickup_column {
+        display: flex;
+        flex-direction: column;
+        width: 392px;
+        gap: 20px;
+
+        h4 {
+            line-height: 45px;
+            margin: 10px 0;
+        }
+    }
+
+}
+
+.form-summary_column {
+    display: flex;
+    align-items: center;
+}

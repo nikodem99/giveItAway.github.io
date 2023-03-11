@@ -1,0 +1,75 @@
+@import "../settings/colors";
+
+.contact {
+    height: 64.125rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: flex-end;
+
+    &::before {
+        content: "";
+        background: url('/assets/Background-Contact-Form.jpg') no-repeat;
+        background-size: cover;
+        opacity: 0.25;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: 0 -8.85rem;
+    }
+
+    .contact-column-wraper {
+        align-self: flex-end;
+        display: flex;
+        flex-direction: column;
+        z-index: 1;
+        margin-bottom: 16.875rem;
+
+        .contact-form_message{
+            padding-top: 2.5rem;
+            padding-bottom: 1.875rem;
+            display: flex;
+            justify-content: center;
+            box-sizing: content-box;
+
+            //SUCCESS MESSAGE
+            .success-message {
+                width: 18.75rem;
+                color: #2D9E22;
+                font-weight: bolder;
+                font-size: 1.125rem;
+                line-height: 1.625rem;
+                text-align: center;
+                align-self: center;
+            }
+
+            //FATAL MESSAGE
+            .fatal-message {
+                @extend .success-message;
+                color: red;
+            }
+        }
+    }
+
+    .contact-footer {
+        z-index: 1;
+        margin-bottom: 1.1875rem;
+        display: flex;
+        justify-content: flex-end;
+
+        .contact-footer_text {
+            text-align: center;
+            font-size: 1.125rem;
+            line-height: 1.5rem;
+            position: absolute;
+            left: 46%;
+        }
+
+        .footer-icon_facebook {
+             margin-right: 1.25rem;
+        }
+    }
+}
